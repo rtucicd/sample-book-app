@@ -20,7 +20,12 @@ jobs:
         run: echo Building of node application is starting ..
 
       - name: ... check node version ...
-        run: node -v 
+        run: node -v
+
+      - name: ... check node and npm versions ...
+        run: |
+          node -v
+          npm -v
         
   deploy-dev:
     name: Deploy DEV
