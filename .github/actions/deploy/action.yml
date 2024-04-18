@@ -28,9 +28,6 @@ runs:
       run: pm2 start -n ${{ inputs.enviroment }} index.js -- ${{ inputs.port }}
       shell: bash
 
-    - name: Check services
-      run: pm2 list
-      shell: bash
-    #       echo "Deplyment to ${enviroment} has started .."
-    # // sh "pm2 delete ${enviroment}"
-    # // sh "pm2 start -n \"${enviroment}\" index.js -- ${port}"
+    # - name: Check services
+    #   run: pm2 list
+    #   shell: bash
