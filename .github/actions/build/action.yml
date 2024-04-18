@@ -1,0 +1,8 @@
+runs:
+  using: "composite"
+  steps:
+    - name: ... buil success ...
+    run: echo Building of node application is starting ..
+    - name: Install dependencies
+    run: npm install
+    
