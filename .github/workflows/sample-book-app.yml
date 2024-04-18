@@ -36,7 +36,7 @@ jobs:
 
     steps:
       - name: ... deploy success ...
-        run: echo Deplyment to DEV has started ..   
+        run: pm2 list   
 
   tests-dev:
     name: Tests DEV
