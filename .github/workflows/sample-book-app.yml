@@ -21,13 +21,6 @@ jobs:
 
       - name: ... check node version ...
         run: node -v 
-
-      - name: ... check node version ...
-        run: | 
-          npm install
-          sudo npm install -g pm2
-          pm2 start -n "My task name" index.js
-          pm2 list
         
   deploy-dev:
     name: Deploy DEV
@@ -36,7 +29,7 @@ jobs:
 
     steps:
       - name: ... deploy success ...
-        run: pm2 list   
+        run: echo Deplyment to DEV has started ..   
 
   tests-dev:
     name: Tests DEV
