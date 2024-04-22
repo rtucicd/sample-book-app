@@ -16,8 +16,9 @@ runs:
         npm run books ${{ inputs.enviroment }}
       shell: bash
     - name: Upload report as artifact
-    uses: actions/upload-artifact@v4.3.2
-      name: test-report
-      path: api-tests/mochawesome-report
-      shell: bash
+      uses: actions/upload-artifact@v4.3.2
+      with:
+        name: test-report
+        path: api-tests/mochawesome-report
+      # shell: bash
 
